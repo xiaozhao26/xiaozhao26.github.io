@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#166534">
+  <title>扫码挪车 - 联系车主</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f0fdf4;
+      color: #1f2937;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 380px;
+      padding: 32px 24px;
+      text-align: center;
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .car {
+      font-size: 64px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 27px;
+      color: #166534;
+    }
+
+    .desc {
+      color: #64748b;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .phone-label {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .phone {
+      margin: 10px 0 22px;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #166534;
+    }
+
+    .call-btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      border-radius: 14px;
+      background: #16a34a;
+      color: white;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .call-btn:active {
+      background: #15803d;
+    }
+
+    .tip {
+      margin-top: 22px;
+      font-size: 12px;
+      line-height: 1.8;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="car">🚗</div>
+
+    <h1>扫码挪车</h1>
+
+    <p class="desc">
+      您好！如果我的车辆影响了您的出行，<br>
+      请点击下方按钮联系我，感谢理解！
+    </p>
+
+    <div class="phone-label">车主联系电话</div>
+
+    <!-- 将下面的示例号码替换成自己的号码 -->
+    <div class="phone">18343807773</div>
+
+    <!-- href 中的号码也要同步修改 -->
+    <a class="call-btn" href="tel:18343807773">
+      ☎ 一键拨打电话
+    </a>
+
+    <p class="tip">
+      点击按钮后，将打开手机拨号界面。<br>
+      感谢您的理解与配合。
+    </p>
+  </main>
+</body>
+</html>
